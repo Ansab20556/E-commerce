@@ -9,5 +9,7 @@
 <body style="font-family: system-ui; margin: 40px;">
     <h1>Welcome to Shoppatty!</h1>
     <p>This is the first step in our E-commerce Store.</p>
+
+       @include('partials.footer')
 </body>
 </html>

@@ -1,0 +1,74 @@
+@extends('layouts.app')
+
+@section('title', 'Category')
+
+@section('content')
+<div class="container mt-4">
+    <h1 class="touch_taital">Category</h1>
+    <div class="category_section">
+        <div class="row">
+            <div class="col-lg-2 col-sm-12">
+                <h1 class="category_text">Category</h1>
+            </div>
+            <div class="col-lg-10 col-sm-12 main d-flex flex-wrap">
+                <div class="col-lg-2 col-sm-6">
+                    <div class="box_main">
+                        <div class="icon_1"></div>
+                        <h4 class="fashion_text active">New Fashion</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="box_main">
+                        <div class="icon_2"></div>
+                        <h4 class="fashion_text">Clothing</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="box_main">
+                        <div class="icon_3"></div>
+                        <h4 class="fashion_text">Watches</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="box_main">
+                        <div class="icon_4"></div>
+                        <h4 class="fashion_text">Accessories</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="box_main">
+                        <div class="icon_5"></div>
+                        <h4 class="fashion_text">Sweaters & Jackets</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category_section_2 mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="beds_section active">
+                    <h1 class="bed_text">Up to 50% off | Beds</h1>
+                    <div><img src="{{ asset('images/img-2.png') }}" class="image_2"></div>
+                    <div class="seemore_bt"><a href="#">see More</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="beds_section">
+                    <h1 class="bed_text">organized in style</h1>
+                    <div><img src="{{ asset('images/img-3.png') }}" class="image_2"></div>
+                    <div class="seemore_bt"><a href="#">see More</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="beds_section">
+                    <h1 class="bed_text">Refurbished mixer</h1>
+                    <div><img src="{{ asset('images/img-4.png') }}" class="image_2"></div>
+                    <div class="seemore_bt"><a href="#">see More</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
