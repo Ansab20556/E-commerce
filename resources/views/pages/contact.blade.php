@@ -6,22 +6,28 @@
 <div class="contact_section layout_padding">
     <div class="container">
         <h1 class="touch_taital">Contact Us</h1>
+
+        @if(session('success'))
+            <div class="alert alert-success">{{ session('success') }}</div>
+        @endif
+
         <div class="contact_section_2">
             <div class="row">
                 <div class="col-md-6">
                     <div class="email_text">
-                        <form>
+                        <form action="{{ route('contact.submit') }}" method="POST">
+                            @csrf
                             <div class="form-group">
-                                <input type="text" class="email-bt" placeholder="Name" name="name">
+                                <input type="text" class="email-bt" placeholder="Name" name="name" required>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="email-bt" placeholder="Phone Number" name="phone">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="email-bt" placeholder="Email" name="email">
+                                <input type="email" class="email-bt" placeholder="Email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="massage-bt" placeholder="Message" rows="5" name="message"></textarea>
+                                <textarea class="massage-bt" placeholder="Message" rows="5" name="message" required></textarea>
                             </div>
                             <div class="send_btn"><button type="submit">SEND</button></div>
                         </form>
